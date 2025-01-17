@@ -1,0 +1,9 @@
+{
+  "src": {
+    "lib": {
+      "stores": {
+        "apiConfig.ts": "import { writable } from 'svelte/store';\n\ninterface ApiConfig {\n    name: string;\n    label: string;\n    baseUrl: string;\n    // ... otras configuraciones\n}\n\nexport const apiConfigs = writable<ApiConfig[]>([\n    {\n        name: 'users',\n        label: 'Usuarios',\n        baseUrl: 'https://jsonplaceholder.typicode.com/users',\n    },\n    {\n        name: 'products',\n        label: 'Productos',\n        baseUrl: 'https://dummyjson.com/products',\n    },\n    // ...\n]);"
+      }
+    }
+  }
+}

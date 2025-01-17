@@ -26,12 +26,16 @@
  * ```
  */
 declare module '$env/static/private' {
+	export const USERS_API_BASE_URL: string;
+	export const PRODUCTS_API_BASE_URL: string;
+	export const NVM_INC: string;
 	export const HERD_PHP_81_INI_SCAN_DIR: string;
 	export const LDFLAGS: string;
 	export const HERD_PHP_80_INI_SCAN_DIR: string;
 	export const TERM_PROGRAM: string;
 	export const NODE: string;
 	export const INIT_CWD: string;
+	export const NVM_CD_FLAGS: string;
 	export const TERM: string;
 	export const SHELL: string;
 	export const CPPFLAGS: string;
@@ -46,6 +50,7 @@ declare module '$env/static/private' {
 	export const npm_config_local_prefix: string;
 	export const HERD_PHP_83_INI_SCAN_DIR: string;
 	export const ZSH: string;
+	export const NVM_DIR: string;
 	export const USER: string;
 	export const LS_COLORS: string;
 	export const COMMAND_MODE: string;
@@ -85,6 +90,7 @@ declare module '$env/static/private' {
 	export const LOGNAME: string;
 	export const npm_lifecycle_script: string;
 	export const VSCODE_GIT_IPC_HANDLE: string;
+	export const NVM_BIN: string;
 	export const PKG_CONFIG_PATH: string;
 	export const npm_config_user_agent: string;
 	export const VSCODE_GIT_ASKPASS_NODE: string;
@@ -125,12 +131,16 @@ declare module '$env/static/public' {
  */
 declare module '$env/dynamic/private' {
 	export const env: {
+		USERS_API_BASE_URL: string;
+		PRODUCTS_API_BASE_URL: string;
+		NVM_INC: string;
 		HERD_PHP_81_INI_SCAN_DIR: string;
 		LDFLAGS: string;
 		HERD_PHP_80_INI_SCAN_DIR: string;
 		TERM_PROGRAM: string;
 		NODE: string;
 		INIT_CWD: string;
+		NVM_CD_FLAGS: string;
 		TERM: string;
 		SHELL: string;
 		CPPFLAGS: string;
@@ -145,6 +155,7 @@ declare module '$env/dynamic/private' {
 		npm_config_local_prefix: string;
 		HERD_PHP_83_INI_SCAN_DIR: string;
 		ZSH: string;
+		NVM_DIR: string;
 		USER: string;
 		LS_COLORS: string;
 		COMMAND_MODE: string;
@@ -184,6 +195,7 @@ declare module '$env/dynamic/private' {
 		LOGNAME: string;
 		npm_lifecycle_script: string;
 		VSCODE_GIT_IPC_HANDLE: string;
+		NVM_BIN: string;
 		PKG_CONFIG_PATH: string;
 		npm_config_user_agent: string;
 		VSCODE_GIT_ASKPASS_NODE: string;
